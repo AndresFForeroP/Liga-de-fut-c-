@@ -1,0 +1,14 @@
+C:\Proyectos visual\C#\trabajos\Liga-Fut\bin\Debug\net9.0\Liga-Fut.exe
+C:\Proyectos visual\C#\trabajos\Liga-Fut\bin\Debug\net9.0\Liga-Fut.deps.json
+C:\Proyectos visual\C#\trabajos\Liga-Fut\bin\Debug\net9.0\Liga-Fut.runtimeconfig.json
+C:\Proyectos visual\C#\trabajos\Liga-Fut\bin\Debug\net9.0\Liga-Fut.dll
+C:\Proyectos visual\C#\trabajos\Liga-Fut\bin\Debug\net9.0\Liga-Fut.pdb
+C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\Liga-Fut.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\Liga-Fut.AssemblyInfoInputs.cache
+C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\Liga-Fut.AssemblyInfo.cs
+C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\Liga-Fut.csproj.CoreCompileInputs.cache
+C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\Liga-Fut.dll
+C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\refint\Liga-Fut.dll
+C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\Liga-Fut.pdb
+C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\Liga-Fut.genruntimeconfig.cache
+C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\ref\Liga-Fut.dll
