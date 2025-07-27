@@ -16,7 +16,11 @@ namespace Liga_Fut.models
         {
             Id = id;
             Nombre = nombre;
-            Capacidad = Capacidad;
+            Capacidad = capacidad;
+        }
+        public String datostorneo()
+        {
+            return $"Torneo #{Id}-- Nombre: {Nombre}, Capacidad: {Capacidad}";
         }
     }
 }

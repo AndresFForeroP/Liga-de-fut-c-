@@ -12,3 +12,4 @@ C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\refint\Liga-Fut.dll
 C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\Liga-Fut.pdb
 C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\Liga-Fut.genruntimeconfig.cache
 C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\ref\Liga-Fut.dll
+C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\Liga-Fut.sourcelink.json

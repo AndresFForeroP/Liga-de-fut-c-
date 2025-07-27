@@ -33,20 +33,20 @@ namespace Liga_Fut.models
         public int MenuTorneo()
         {
             int salida = 0;
-            Console.WriteLine(MenuPrin);
+            Console.WriteLine(Menutor);
             do
             {
                 if (!int.TryParse(Console.ReadLine(), out salida))
                 {
                     Console.Clear();
                     Console.WriteLine("VALOR INGRESADO NO VALIDO");
-                    Console.WriteLine(MenuPrin);
+                    Console.WriteLine(Menutor);
                 }
                 if (salida == 9)
                 {
                     Console.WriteLine("Volviendo al Menu Principal...");
                     Console.ResetColor();
-                    Thread.Sleep(1000);
+                    
                 }
             }
             while (salida != 1 && salida != 2 && salida != 3 && salida != 4 && salida != 9);

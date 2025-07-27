@@ -40,7 +40,7 @@ El sistema está diseñado con menús jerárquicos, con enfoque modular, estruct
 1. Clona este repositorio:
 
    ```bash
-   https://github.com/AndresFForeroP/Liga-de-fut-c-.git
+   git clone https://github.com/AndresFForeroP/Liga-de-fut-c-.git
    ```
 
 2. Abre el proyecto en tu IDE preferido.
