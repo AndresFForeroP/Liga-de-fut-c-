@@ -91,7 +91,7 @@ Ingrese un numero segun lo que desea realizar
 """;
         private string Menutor = """
 ╔════════════════════════════════════╗
-║         M E N Ú   TORNEO           ║
+║       M E N Ú   T O R N E O        ║
 ╠════════════════════════════════════╣
 ║  1. Agregar Torneo                 ║
 ║  2. Buscar Torneo                  ║
@@ -103,7 +103,7 @@ Ingrese un numero segun lo que desea realizar
 """;
         private string MenuBuscarTor = """
 ╔════════════════════════════════════╗
-║         BUSCAR  TORNEO             ║
+║     B U S C A R  T O R N E O       ║
 ╠════════════════════════════════════╣
 ║  1. Buscar Por Id                  ║
 ║  2. Buscar Por nombre              ║

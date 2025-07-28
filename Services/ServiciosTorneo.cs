@@ -11,7 +11,7 @@ namespace Liga_Fut.Services
         public string validarCreacion(int id, string nombre, int capacidad)
         {
             Console.WriteLine("los datos del torneo son:");
-            Console.WriteLine($"El id generad0 fue #{id}");
+            Console.WriteLine($"El id generado fue #{id}");
             Console.WriteLine($"Nombre de torneo: {nombre} - Capacidad torneo: {capacidad} equipos");
             Console.WriteLine("esta seguro de agreagar el torneo?");
             Console.WriteLine("ingrese si para agregar el torneo o no si desea volver a ingresar los datos");
@@ -95,7 +95,7 @@ namespace Liga_Fut.Services
             Console.WriteLine("Ingrese el id del torneo que desea buscar");
             while (!int.TryParse(Console.ReadLine(), out idbusqueda) || idbusqueda <= 0)
             {
-                Console.WriteLine("ingrese un id de torneo valida");
+                Console.WriteLine("Ingrese un id de torneo valida");
             }
             foreach (var item in Torneos)
             {
@@ -105,13 +105,13 @@ namespace Liga_Fut.Services
                     existe = true;
                     Console.WriteLine("Torneo encontrado");
                     Console.WriteLine(item.datostorneo());
-                    Console.WriteLine("esta seguro de eliminar el torneo?");
-                    Console.WriteLine("ingrese si para eliminar el torneo o no si desea volver");
+                    Console.WriteLine("Esta seguro de eliminar el torneo?");
+                    Console.WriteLine("Ingrese si para eliminar el torneo o no si desea volver");
                     seguro = Console.ReadLine() ?? "";
                     while (seguro.ToLower() != "no" && seguro.ToLower() != "si")
                     {
                         Console.WriteLine("Valor invalido");
-                        Console.WriteLine("ingrese si para eliminar el torneo o no si desea volver");
+                        Console.WriteLine("Ingrese si para eliminar el torneo o no si desea volver");
                         seguro = Console.ReadLine() ?? "";
                     }
                     if (seguro == "si")
@@ -154,13 +154,13 @@ namespace Liga_Fut.Services
                     existe = true;
                     Console.WriteLine("Torneo encontrado");
                     Console.WriteLine(item.datostorneo());
-                    Console.WriteLine("esta seguro de eliminar el torneo?");
-                    Console.WriteLine("ingrese si para eliminar el torneo o no si desea volver");
+                    Console.WriteLine("Esta seguro de eliminar el torneo?");
+                    Console.WriteLine("Ingrese si para eliminar el torneo o no si desea volver");
                     seguro = Console.ReadLine() ?? "";
                     while (seguro.ToLower() != "no" && seguro.ToLower() != "si")
                     {
                         Console.WriteLine("Valor invalido");
-                        Console.WriteLine("ingrese si para eliminar el torneo o no si desea volver");
+                        Console.WriteLine("Ingrese si para eliminar el torneo o no si desea volver");
                         seguro = Console.ReadLine() ?? "";
                     }
                     if (seguro == "si")
@@ -189,7 +189,7 @@ namespace Liga_Fut.Services
             Console.WriteLine("Ingrese el id del torneo que desea Actualizar");
             while (!int.TryParse(Console.ReadLine(), out idbusqueda) || idbusqueda <= 0)
             {
-                Console.WriteLine("ingrese un id de torneo valida");
+                Console.WriteLine("Ingrese un id de torneo valida");
             }
             foreach (var item in Torneos)
             {
@@ -221,24 +221,24 @@ namespace Liga_Fut.Services
                         }
 
                     }
-                    Console.WriteLine("ingrese la cantidad de equipos que va a tener el torneo actualizado");
+                    Console.WriteLine("Ingrese la cantidad de equipos que va a tener el torneo actualizado");
                     while (!int.TryParse(Console.ReadLine(), out capacidad) || capacidad > 22 || capacidad <= 1)
                     {
-                        Console.WriteLine("ingrese un capacidad valida");
+                        Console.WriteLine("Ingrese un capacidad valida");
                         if (capacidad > 22 || capacidad <= 1)
                         {
-                            Console.WriteLine("la capacidad del torneo es de almenos 2 equipos hasta 22 equipos");
+                            Console.WriteLine("La capacidad del torneo es de almenos 2 equipos hasta 22 equipos");
                         }
                     }
-                    Console.WriteLine("los datos del nuevos del torneo son:");
-                    Console.WriteLine($"nombre torneo = {nombre}, capacidad de equipos = {capacidad}");
-                    Console.WriteLine("esta seguro de actualizar el torneo?");
-                    Console.WriteLine("ingrese si para agregar el torneo o no si desea volver a ingresar los datos");
+                    Console.WriteLine("Los datos del nuevos del torneo son:");
+                    Console.WriteLine($"Nombre torneo = {nombre}, capacidad de equipos = {capacidad}");
+                    Console.WriteLine("Esta seguro de actualizar el torneo?");
+                    Console.WriteLine("Ingrese si para agregar el torneo o no si desea volver a ingresar los datos");
                     seguro = Console.ReadLine() ?? "";
                     while (seguro.ToLower() != "no" && seguro.ToLower() != "si")
                     {
                         Console.WriteLine("Valor invalido");
-                        Console.WriteLine("ingrese si para agregar el torneo o no si desea volver a ingresar los datos");
+                        Console.WriteLine("Ingrese si para agregar el torneo o no si desea volver a ingresar los datos");
                         seguro = Console.ReadLine() ?? "";
                     }
                     if (seguro == "si")
@@ -310,24 +310,24 @@ namespace Liga_Fut.Services
                         }
 
                     }
-                    Console.WriteLine("ingrese la cantidad de equipos que va a tener el torneo actualizado");
+                    Console.WriteLine("Ingrese la cantidad de equipos que va a tener el torneo actualizado");
                     while (!int.TryParse(Console.ReadLine(), out capacidad) || capacidad > 22 || capacidad <= 1)
                     {
-                        Console.WriteLine("ingrese un capacidad valida");
+                        Console.WriteLine("Ingrese un capacidad valida");
                         if (capacidad > 22 || capacidad <= 1)
                         {
-                            Console.WriteLine("la capacidad del torneo es de almenos 2 equipos hasta 22 equipos");
+                            Console.WriteLine("La capacidad del torneo es de almenos 2 equipos hasta 22 equipos");
                         }
                     }
-                    Console.WriteLine("los datos del nuevos del torneo son:");
-                    Console.WriteLine($"nombre torneo = {nombre}, capacidad de equipos = {capacidad}");
-                    Console.WriteLine("esta seguro de actualizar el torneo?");
-                    Console.WriteLine("ingrese si para agregar el torneo o no si desea volver a ingresar los datos");
+                    Console.WriteLine("Los datos del nuevos del torneo son:");
+                    Console.WriteLine($"Nombre torneo = {nombre}, capacidad de equipos = {capacidad}");
+                    Console.WriteLine("Esta seguro de actualizar el torneo?");
+                    Console.WriteLine("Ingrese si para agregar el torneo o no si desea volver a ingresar los datos");
                     seguro = Console.ReadLine() ?? "";
                     while (seguro.ToLower() != "no" && seguro.ToLower() != "si")
                     {
                         Console.WriteLine("Valor invalido");
-                        Console.WriteLine("ingrese si para agregar el torneo o no si desea volver a ingresar los datos");
+                        Console.WriteLine("Ingrese si para agregar el torneo o no si desea volver a ingresar los datos");
                         seguro = Console.ReadLine() ?? "";
                     }
                     if (seguro == "si")

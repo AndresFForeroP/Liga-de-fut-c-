@@ -11,7 +11,6 @@ namespace Liga_Fut.models
         public string? Nombre { get; set; }
         public int Capacidad { get; set; }
         public HashSet<Equipo> EquiposRegistrados = new HashSet<Equipo>();
-
         public Torneo(int id, string nombre, int capacidad)
         {
             Id = id;

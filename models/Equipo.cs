@@ -16,5 +16,13 @@ namespace Liga_Fut.models
             Id = id;
             Nombre = nombre;
         }
+        public Equipo()
+        {
+
+        }
+        public String datosequipo()
+        {
+            return $"Id Equipo #{Id}-- Nombre: {Nombre}";
+        }
     }
 }

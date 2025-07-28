@@ -9,10 +9,14 @@ internal class Program
     private static void Main(string[] args)
     {
         HashSet<Torneo> Torneos = new HashSet<Torneo>();
+        HashSet<Equipo> Equipos = new HashSet<Equipo>();
+        HashSet<Jugador> Jugadores = new HashSet<Jugador>();
         Console.ForegroundColor = ConsoleColor.Magenta;
         MenusTorneo menusdetorneos = new MenusTorneo();
         MenusJugador menusdejugadores = new MenusJugador();
         ServiciosTorneo serviciosTorneo = new ServiciosTorneo();
+        ServiciosEquipo serviciosEquipo = new ServiciosEquipo();
+        ServiciosJugador serviciosJugador = new ServiciosJugador();
         HelperLiga helperGeneral = new HelperLiga();
         int menuprincipal = 0;
         do
@@ -121,9 +125,45 @@ internal class Program
                     } while (menutorneo != 9);
                     break;
                 case 2:
-                    //int menuequipo = 0;
+                    int menuequipo = 0;
                     Console.Clear();
                     Console.WriteLine("Elegiste Registro Equipo ");
+                    do
+                    {
+                        menuequipo = menusdejugadores.MenuPrincipal();
+                        Console.Clear();
+                        switch (menuequipo)
+                        {
+                            case 1:
+                                int id = helperGeneral.GenerarIdUnico(Equipos,equipo => equipo.Id);
+                                string nombre = helperGeneral.validarNombre(Equipos,equipo => equipo.Nombre?? "");
+                                string seguro = serviciosEquipo.validarCreacion(id, nombre);
+                                if (seguro == "si")
+                                {
+                                    Equipo nuevo_equipo = new Equipo(id, nombre);
+                                    Console.WriteLine("Equipo creado con exito");
+                                    Equipos.Add(nuevo_equipo);
+                                    Thread.Sleep(1000);
+                                    Console.Clear();
+                                }
+                                else
+                                {
+                                    Console.Clear();
+                                }
+                                foreach (var item in Equipos)
+                                {
+                                    item.datosequipo();
+                                    Console.ReadKey();
+                                }
+                                break;
+                            case 2:
+                                break;
+                            case 3:
+                                break;
+                            case 4:
+                                break;
+                        }
+                    } while (menuequipo != 9);
                     break;
                 case 3:
                     int menujugador = 0;
@@ -136,6 +176,26 @@ internal class Program
                         switch (menujugador)
                         {
                             case 1:
+                                //pendiente agregar atributos necesarios para agregar un jugador
+                                int id = helperGeneral.GenerarIdUnico(Equipos,equipo => equipo.Id);
+                                string nombre = helperGeneral.validarNombre(Equipos,equipo => equipo.Nombre?? "");
+                                string seguro = serviciosJugador.validarCreacion(id, nombre);
+                                if (seguro == "si")
+                                {
+                                    Jugador nuevoJugador = new Jugador();
+                                    Console.WriteLine("Jugador creado con exito");
+                                    Jugadores.Add(nuevoJugador);
+                                    Thread.Sleep(1000);
+                                    Console.Clear();
+                                }
+                                else
+                                {
+                                    Console.Clear();
+                                }
+                                foreach (var item in Jugadores)
+                                {
+                                    item.datosjugador();
+                                }
                                 break;
                             case 2:
                                 break;

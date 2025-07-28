@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Liga_Fut.Helpers
+namespace Liga_Fut.models
 {
-    public class HelperTorneo
+    public class MenusEquipo
     {
         
     }
