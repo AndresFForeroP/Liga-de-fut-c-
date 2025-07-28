@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Liga_Fut.models
 {
-    public class Menus
+    public class MenusTorneo
     {
         public int MenuPrincipal()
         {

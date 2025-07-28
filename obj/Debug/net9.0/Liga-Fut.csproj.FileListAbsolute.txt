@@ -1,15 +1,30 @@
-C:\Proyectos visual\C#\trabajos\Liga-Fut\bin\Debug\net9.0\Liga-Fut.exe
-C:\Proyectos visual\C#\trabajos\Liga-Fut\bin\Debug\net9.0\Liga-Fut.deps.json
-C:\Proyectos visual\C#\trabajos\Liga-Fut\bin\Debug\net9.0\Liga-Fut.runtimeconfig.json
-C:\Proyectos visual\C#\trabajos\Liga-Fut\bin\Debug\net9.0\Liga-Fut.dll
-C:\Proyectos visual\C#\trabajos\Liga-Fut\bin\Debug\net9.0\Liga-Fut.pdb
-C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\Liga-Fut.GeneratedMSBuildEditorConfig.editorconfig
-C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\Liga-Fut.AssemblyInfoInputs.cache
-C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\Liga-Fut.AssemblyInfo.cs
-C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\Liga-Fut.csproj.CoreCompileInputs.cache
-C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\Liga-Fut.dll
-C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\refint\Liga-Fut.dll
-C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\Liga-Fut.pdb
-C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\Liga-Fut.genruntimeconfig.cache
-C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\ref\Liga-Fut.dll
-C:\Proyectos visual\C#\trabajos\Liga-Fut\obj\Debug\net9.0\Liga-Fut.sourcelink.json
+C:/Proyectos visual/C#/trabajos/Liga-Fut/bin/Debug/net9.0/Liga-Fut.exe
+C:/Proyectos visual/C#/trabajos/Liga-Fut/bin/Debug/net9.0/Liga-Fut.deps.json
+C:/Proyectos visual/C#/trabajos/Liga-Fut/bin/Debug/net9.0/Liga-Fut.runtimeconfig.json
+C:/Proyectos visual/C#/trabajos/Liga-Fut/bin/Debug/net9.0/Liga-Fut.dll
+C:/Proyectos visual/C#/trabajos/Liga-Fut/bin/Debug/net9.0/Liga-Fut.pdb
+C:/Proyectos visual/C#/trabajos/Liga-Fut/obj/Debug/net9.0/Liga-Fut.GeneratedMSBuildEditorConfig.editorconfig
+C:/Proyectos visual/C#/trabajos/Liga-Fut/obj/Debug/net9.0/Liga-Fut.AssemblyInfoInputs.cache
+C:/Proyectos visual/C#/trabajos/Liga-Fut/obj/Debug/net9.0/Liga-Fut.AssemblyInfo.cs
+C:/Proyectos visual/C#/trabajos/Liga-Fut/obj/Debug/net9.0/Liga-Fut.csproj.CoreCompileInputs.cache
+C:/Proyectos visual/C#/trabajos/Liga-Fut/obj/Debug/net9.0/Liga-Fut.dll
+C:/Proyectos visual/C#/trabajos/Liga-Fut/obj/Debug/net9.0/refint/Liga-Fut.dll
+C:/Proyectos visual/C#/trabajos/Liga-Fut/obj/Debug/net9.0/Liga-Fut.pdb
+C:/Proyectos visual/C#/trabajos/Liga-Fut/obj/Debug/net9.0/Liga-Fut.genruntimeconfig.cache
+C:/Proyectos visual/C#/trabajos/Liga-Fut/obj/Debug/net9.0/ref/Liga-Fut.dll
+C:/Proyectos visual/C#/trabajos/Liga-Fut/obj/Debug/net9.0/Liga-Fut.sourcelink.json
+/home/camper/j2/Liga-de-fut-c-/bin/Debug/net9.0/Liga-Fut
+/home/camper/j2/Liga-de-fut-c-/bin/Debug/net9.0/Liga-Fut.deps.json
+/home/camper/j2/Liga-de-fut-c-/bin/Debug/net9.0/Liga-Fut.runtimeconfig.json
+/home/camper/j2/Liga-de-fut-c-/bin/Debug/net9.0/Liga-Fut.dll
+/home/camper/j2/Liga-de-fut-c-/bin/Debug/net9.0/Liga-Fut.pdb
+/home/camper/j2/Liga-de-fut-c-/obj/Debug/net9.0/Liga-Fut.GeneratedMSBuildEditorConfig.editorconfig
+/home/camper/j2/Liga-de-fut-c-/obj/Debug/net9.0/Liga-Fut.AssemblyInfoInputs.cache
+/home/camper/j2/Liga-de-fut-c-/obj/Debug/net9.0/Liga-Fut.AssemblyInfo.cs
+/home/camper/j2/Liga-de-fut-c-/obj/Debug/net9.0/Liga-Fut.csproj.CoreCompileInputs.cache
+/home/camper/j2/Liga-de-fut-c-/obj/Debug/net9.0/Liga-Fut.sourcelink.json
+/home/camper/j2/Liga-de-fut-c-/obj/Debug/net9.0/Liga-Fut.dll
+/home/camper/j2/Liga-de-fut-c-/obj/Debug/net9.0/refint/Liga-Fut.dll
+/home/camper/j2/Liga-de-fut-c-/obj/Debug/net9.0/Liga-Fut.pdb
+/home/camper/j2/Liga-de-fut-c-/obj/Debug/net9.0/Liga-Fut.genruntimeconfig.cache
+/home/camper/j2/Liga-de-fut-c-/obj/Debug/net9.0/ref/Liga-Fut.dll

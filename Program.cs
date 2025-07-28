@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Security.Cryptography.X509Certificates;
+using Liga_Fut.Helpers;
 using Liga_Fut.models;
 using Liga_Fut.Services;
 
@@ -9,12 +10,14 @@ internal class Program
     {
         HashSet<Torneo> Torneos = new HashSet<Torneo>();
         Console.ForegroundColor = ConsoleColor.Magenta;
-        Menus menus = new Menus();
+        MenusTorneo menusdetorneos = new MenusTorneo();
+        MenusJugador menusdejugadores = new MenusJugador();
         ServiciosTorneo serviciosTorneo = new ServiciosTorneo();
+        HelperLiga helperGeneral = new HelperLiga();
         int menuprincipal = 0;
         do
         {
-            menuprincipal = menus.MenuPrincipal();
+            menuprincipal = menusdetorneos.MenuPrincipal();
             switch (menuprincipal)
             {
                 case 1:
@@ -23,15 +26,15 @@ internal class Program
                     Console.WriteLine("Elegiste crear torneo ");
                     do
                     {
-                        menutorneo = menus.MenuTorneo();
+                        menutorneo = menusdetorneos.MenuTorneo();
                         Console.Clear();
                         int MenuBuscarTorneo = 0;
                         switch (menutorneo)
                         {
                             case 1:
-                                int id = serviciosTorneo.generarIdUnico(Torneos);
-                                string nombre = serviciosTorneo.validarNombre(Torneos);
-                                int capacidad = serviciosTorneo.validadCapacidad();
+                                int id = helperGeneral.GenerarIdUnico(Torneos,torneo => torneo.Id);
+                                string nombre = helperGeneral.validarNombre(Torneos,torneo => torneo.Nombre?? "");
+                                int capacidad = helperGeneral.validadCapacidad(22,2,"torneo");
                                 string seguro = serviciosTorneo.validarCreacion(id, nombre, capacidad);
                                 if (seguro == "si")
                                 {
@@ -57,7 +60,7 @@ internal class Program
                                 else
                                 {
                                     Console.WriteLine("Elegiste Buscar Torneo");
-                                    MenuBuscarTorneo = menus.MenuBuscarTorneo();
+                                    MenuBuscarTorneo = menusdetorneos.MenuBuscarTorneo();
                                     switch (MenuBuscarTorneo)
                                     {
                                         case 1:
@@ -79,7 +82,7 @@ internal class Program
                                 else
                                 {
                                     Console.WriteLine("Elegiste Eliminar Torneo");
-                                    MenuBuscarTorneo = menus.MenuBuscarTorneo();
+                                    MenuBuscarTorneo = menusdetorneos.MenuBuscarTorneo();
                                     switch (MenuBuscarTorneo)
                                     {
                                         case 1:
@@ -101,7 +104,7 @@ internal class Program
                                 else
                                 {
                                     Console.WriteLine("Elegiste Actualizar Torneo");
-                                    MenuBuscarTorneo = menus.MenuBuscarTorneo();
+                                    MenuBuscarTorneo = menusdetorneos.MenuBuscarTorneo();
                                     switch (MenuBuscarTorneo)
                                     {
                                         case 1:
@@ -118,10 +121,30 @@ internal class Program
                     } while (menutorneo != 9);
                     break;
                 case 2:
-
+                    //int menuequipo = 0;
+                    Console.Clear();
+                    Console.WriteLine("Elegiste Registro Equipo ");
                     break;
                 case 3:
-                    Console.WriteLine("Elegiste ");
+                    int menujugador = 0;
+                    Console.Clear();
+                    Console.WriteLine("Elegiste Registro Jugador ");
+                    do
+                    {
+                        menujugador = menusdejugadores.MenuPrincipal();
+                        Console.Clear();
+                        switch (menujugador)
+                        {
+                            case 1:
+                                break;
+                            case 2:
+                                break;
+                            case 3:
+                                break;
+                            case 4:
+                                break;
+                        }
+                    } while (menujugador != 9);
                     break;
                 case 4:
                     Console.WriteLine("Elegiste ");

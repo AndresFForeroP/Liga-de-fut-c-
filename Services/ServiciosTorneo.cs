@@ -8,67 +8,6 @@ namespace Liga_Fut.Services
 {
     public class ServiciosTorneo
     {
-        public int generarIdUnico(HashSet<Torneo> Torneos)
-        {
-            Random random = new Random();
-            int id = random.Next(1, 100000);
-            foreach (var item in Torneos)
-            {
-                if (item.Id == id)
-                {
-                    id = random.Next(1, 9999);
-                }
-            }
-            return id;
-        }
-        public string validarNombre(HashSet<Torneo> Torneos)
-        {
-            Console.WriteLine("Ingrese el nombre del torneo");
-            string nombre = Console.ReadLine() ?? "";
-            while (nombre == "")
-            {
-                Console.Clear();
-                Console.WriteLine("EL torneo tiene que tener un nombre");
-                Console.WriteLine("Ingrese el nombre del torneo");
-                nombre = Console.ReadLine() ?? "";
-            }
-            if (Torneos.Count > 0)
-            {
-                while (Torneos.Any(torneo => torneo.Nombre != null && torneo.Nombre.Equals(nombre.ToLower())) || nombre == "")
-                {
-                    if (nombre == "")
-                    {
-                        Console.Clear();
-                        Console.WriteLine("EL torneo tiene que tener un nombre");
-                        Console.WriteLine("Ingrese el nombre del torneo");
-                        nombre = Console.ReadLine() ?? "";
-                    }
-                    else
-                    {
-                        Console.Clear();
-                        Console.WriteLine("EL nombre del torneo ya esta registrado");
-                        Console.WriteLine("Ingrese el nombre de un torneo que no este registrado");
-                        nombre = Console.ReadLine() ?? "";
-                    }
-                }
-            }
-            return nombre;
-        }
-        public int validadCapacidad()
-        {
-            int capacidad = 0;
-            Console.WriteLine("ingrese la cantidad de equipos que va a tener el torneo");
-            while (!int.TryParse(Console.ReadLine(), out capacidad) || capacidad > 22 || capacidad <= 1)
-            {
-                Console.WriteLine("ingrese un capacidad valida");
-                if (capacidad > 22 || capacidad <= 1)
-                {
-                    Console.WriteLine("la capacidad del torneo es de almenos 2 equipos hasta 22 equipos");
-                }
-            }
-            Console.Clear();
-            return capacidad;
-        }
         public string validarCreacion(int id, string nombre, int capacidad)
         {
             Console.WriteLine("los datos del torneo son:");

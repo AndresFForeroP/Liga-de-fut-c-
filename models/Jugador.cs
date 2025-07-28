@@ -9,6 +9,9 @@ namespace Liga_Fut.models
     {
         public int Dorsal { get; set; }
         public string? Posicion { get; set; }
+        public int Asistencias { get; set; }
+        public decimal Precio { get; set; }
+        public int Goles { get; set; }
 
         public Jugador(int id, string nombre, int edad, string origen, string email)
         {
