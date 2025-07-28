@@ -10,6 +10,7 @@ namespace Liga_Fut.models
     {
         public int MenuPrincipal()
         {
+            Console.Clear();
             int salida = 0;
             do
             {
@@ -34,6 +35,7 @@ namespace Liga_Fut.models
         }
         public int MenuTorneo()
         {
+            Console.Clear();
             int salida = 0;
             do
             {
@@ -58,8 +60,8 @@ namespace Liga_Fut.models
         }
         public int MenuBuscarTorneo()
         {
+            Console.Clear();
             int salida = 0;
-
             do
             {
                 Console.WriteLine(MenuBuscarTor);
