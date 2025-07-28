@@ -11,14 +11,15 @@ namespace Liga_Fut.models
         public int MenuPrincipal()
         {
             int salida = 0;
-            Console.WriteLine(MenuPrin);
             do
             {
-                if (!int.TryParse(Console.ReadLine(), out salida))
+                Console.WriteLine(MenuPrin);
+                if (!int.TryParse(Console.ReadLine(), out salida) || salida != 1 && salida != 2 && salida != 3 && salida != 4 && salida != 5 && salida != 9)
                 {
                     Console.Clear();
                     Console.WriteLine("VALOR INGRESADO NO VALIDO");
-                    Console.WriteLine(MenuPrin);
+                    Thread.Sleep(2000);
+                    Console.Clear();
                 }
                 if (salida == 9)
                 {
@@ -26,6 +27,7 @@ namespace Liga_Fut.models
                     Console.ResetColor();
                     Thread.Sleep(1000);
                 }
+    
             }
             while (salida != 1 && salida != 2 && salida != 3 && salida != 4 && salida != 5 && salida != 9);
             return salida;
@@ -33,26 +35,45 @@ namespace Liga_Fut.models
         public int MenuTorneo()
         {
             int salida = 0;
-            Console.WriteLine(Menutor);
             do
             {
-                if (!int.TryParse(Console.ReadLine(), out salida))
+                Console.WriteLine(Menutor);
+                if (!int.TryParse(Console.ReadLine(), out salida) || salida != 1 && salida != 2 && salida != 3 && salida != 4 && salida != 9)
                 {
                     Console.Clear();
                     Console.WriteLine("VALOR INGRESADO NO VALIDO");
-                    Console.WriteLine(Menutor);
+                    Thread.Sleep(2000);
+                    Console.Clear();
                 }
                 if (salida == 9)
                 {
                     Console.WriteLine("Volviendo al Menu Principal...");
-                    Console.ResetColor();
-                    
+                    Thread.Sleep(2000);
+                    Console.Clear();
+
                 }
             }
             while (salida != 1 && salida != 2 && salida != 3 && salida != 4 && salida != 9);
             return salida;
         }
+        public int MenuBuscarTorneo()
+        {
+            int salida = 0;
 
+            do
+            {
+                Console.WriteLine(MenuBuscarTor);
+                if (!int.TryParse(Console.ReadLine(), out salida) || salida != 1 && salida != 2)
+                {
+                    Console.Clear();
+                    Console.WriteLine("VALOR INGRESADO NO VALIDO");
+                    Thread.Sleep(2000);
+                    Console.Clear();
+                }
+            }
+            while (salida != 1 && salida != 2);
+            return salida;
+        }
         private string MenuPrin = """
 ╔════════════════════════════════════╗
 ║    M E N Ú   P R I N C I P A L     ║
@@ -75,6 +96,15 @@ Ingrese un numero segun lo que desea realizar
 ║  3. Eliminar Torneo                ║
 ║  4. Actualizar Torneo              ║
 ║  9. Volver al Menu Principal       ║
+╚════════════════════════════════════╝
+Ingrese un numero segun lo que desea realizar
+""";
+        private string MenuBuscarTor = """
+╔════════════════════════════════════╗
+║         BUSCAR  TORNEO             ║
+╠════════════════════════════════════╣
+║  1. Buscar Por Id                  ║
+║  2. Buscar Por nombre              ║
 ╚════════════════════════════════════╝
 Ingrese un numero segun lo que desea realizar
 """;

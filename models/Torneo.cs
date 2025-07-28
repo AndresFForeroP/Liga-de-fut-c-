@@ -20,7 +20,7 @@ namespace Liga_Fut.models
         }
         public String datostorneo()
         {
-            return $"Torneo #{Id}-- Nombre: {Nombre}, Capacidad: {Capacidad}";
+            return $"Id Torneo #{Id}-- Nombre: {Nombre}, Capacidad: {Capacidad} equipos";
         }
     }
 }
