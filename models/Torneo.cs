@@ -10,6 +10,9 @@ namespace Liga_Fut.models
         public int Id { get; set; }
         public string? Nombre { get; set; }
         public int Capacidad { get; set; }
+        public string? Pais { get; set; }
+        public DateTime fechainicio { get; set; }
+        public DateTime fechafinal { get; set; }
         public HashSet<Equipo> EquiposRegistrados = new HashSet<Equipo>();
         public Torneo(int id, string nombre, int capacidad)
         {

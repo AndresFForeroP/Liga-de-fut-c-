@@ -177,8 +177,8 @@ internal class Program
                         {
                             case 1:
                                 //pendiente agregar atributos necesarios para agregar un jugador
-                                int id = helperGeneral.GenerarIdUnico(Equipos,equipo => equipo.Id);
-                                string nombre = helperGeneral.validarNombre(Equipos,equipo => equipo.Nombre?? "");
+                                int id = helperGeneral.GenerarIdUnico(Jugadores,Jugador => Jugador.Id);
+                                string nombre = helperGeneral.validarNombre(Jugadores,Jugador => Jugador.Nombre?? "");
                                 string seguro = serviciosJugador.validarCreacion(id, nombre);
                                 if (seguro == "si")
                                 {

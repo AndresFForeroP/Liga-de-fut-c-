@@ -7,7 +7,6 @@ namespace Liga_Fut.models
 {
     public class Jugador : Persona
     {
-        public int Id { get; set; }
         public int Dorsal { get; set; }
         public string? Posicion { get; set; }
         public int Asistencias { get; set; }
